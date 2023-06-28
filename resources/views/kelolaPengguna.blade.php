@@ -13,7 +13,7 @@
             <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#tambahModal">
                 Tambah Pengguna
             </button>
-                    
+                
             <table id="table-data" class="table table-bordered">
                 <thead>
                     <tr class="text-center">

@@ -6,7 +6,7 @@
     <h1 class="m-0 text-dark">Dashboard</h1>
 @stop
 
-@section('content')
+@section('content_body')
     <div class="row">
         <div class="col-12">
             <div class="card">

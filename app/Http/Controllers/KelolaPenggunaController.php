@@ -13,7 +13,7 @@ class KelolaPenggunaController extends Controller
 
         $users = User::All();
 
-        return view ('dataPengguna', compact('users'));
+        return view ('kelolaPengguna', compact('users'));
     }
 
     public function tambahPengguna(Request $req)
@@ -40,7 +40,12 @@ class KelolaPenggunaController extends Controller
             'alert-type' =>'success'
         );
 
-        return redirect()->route('tambahPengguna')->with($notification);
+        if($user){
+            return redirect()->route('dataPengguna')->with($notification);
+        }else{
+            return redirect()->route('/register');
+        }
+        
         // return redirect()->route('tambahPengguna');
     }
 }

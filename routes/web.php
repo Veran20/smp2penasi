@@ -29,3 +29,4 @@ Route::get('/home', function() {
 })->name('home')->middleware('auth');
 
 Route::get('/admin/kelolaPengguna', [kelolaPenggunaController::class, 'kelolaPengguna'])->name('dataPengguna');
+Route::post('/admin/kelolaPengguna/tambah', [kelolaPenggunaController::class, 'tambahPengguna'])->name('tambahPengguna');
