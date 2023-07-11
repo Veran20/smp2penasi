@@ -333,7 +333,7 @@ return [
         [
             'text'       => 'Data Pengguna',
             'icon'       => 'fas fa-light fa-users',
-            'url'        => 'admin/dataPengguna',
+            'url'        => 'admin/kelolaPengguna',
         ],
         [
             'text'       => 'Data Pengaduan',
@@ -348,7 +348,12 @@ return [
         [
             'text'       => 'Buat Pengaduan',
             'icon_color' => 'fas fa-light fa-comment',
-            'url'        => 'admin/pengaduan',
+            'url'        => 'admin/buatPenasi',
+        ],
+        [
+            'text'       => 'Cek Pengaduan',
+            'icon_color' => 'fas fa-light fa-comments',
+            'url'        => 'admin/cekPenasi',
         ],
     ],
 
