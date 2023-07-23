@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<b>PENASI SPENDA</b>',
+    'logo' => '<b>PENASI</b>',
     'logo_img' => 'vendor/adminlte/dist/img/smp2.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -336,7 +336,7 @@ return [
             'url'        => 'admin/kelolaPengguna',
         ],
         [
-            'text'       => 'Data Pengaduan',
+            'text'       => 'Data Penasi',
             'icon_color' => 'fas fa-light fa-comments',
             'url'        => 'admin/dataPengaduan',
         ],
@@ -346,12 +346,12 @@ return [
             'url'        => 'admin/Laporan',
         ],
         [
-            'text'       => 'Buat Pengaduan',
+            'text'       => 'Buat Penasi',
             'icon_color' => 'fas fa-light fa-comment',
             'url'        => 'admin/buatPenasi',
         ],
         [
-            'text'       => 'Cek Pengaduan',
+            'text'       => 'Cek Penasi',
             'icon_color' => 'fas fa-light fa-comments',
             'url'        => 'admin/cekPenasi',
         ],
