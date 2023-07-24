@@ -28,7 +28,7 @@ Route::get('/home', function() {
     return view('home');
 })->name('home')->middleware('auth');
 
-Route::get('/admin/kelolaPengguna', [kelolaPenggunaController::class, 'kelolaPengguna'])->name('dataPengguna');
+Route::get('/admin/kelolaPengguna', [kelolaPenggunaController::class, 'kelolaPengguna'])->name('dataPengguna')->middleware('is_admin');
 Route::post('/admin/kelolaPengguna/tambah', [kelolaPenggunaController::class, 'tambahPengguna'])->name('tambahPengguna');
 Route::patch('/admin/kelolaPengguna/ubahPengguna',[kelolaPenggunaController::class, 'ubahPengguna'])->name('ubahPengguna');
 Route::get('/admin/ajaxadmin/dataPengguna/{id}', [kelolaPenggunaController::class, 'getPengguna'])->name('getPengguna');

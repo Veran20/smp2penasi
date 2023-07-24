@@ -21,8 +21,9 @@ class PenasiController extends Controller
     {
         $penasi = new Penasi;
 
-        $penasi->jenis = $req->get('pilih');
+        $penasi->kategori = $req->get('kategori');
         $penasi->deskripsi = $req->get('deskripsi');
+        $penasi->jenis = $req->get('jenis');
         $penasi->berkasPendukung = $req->get('berkasPendukung');
 
         if ($req->hasFile('berkasPendukung')) {

@@ -17,6 +17,7 @@ class CreatePenasisTable extends Migration
             $table->id();
             $table->string('jenis');
             $table->string('deskripsi');
+            $table->string('kategori');
             $table->string('berkasPendukung')->nullable();
             $table->timestamps();
         });
